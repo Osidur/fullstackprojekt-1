@@ -9,7 +9,7 @@
 }
 
 //Grid setup attributes
-//$gc = Grid colums
+//$gc = Grid columns
 //$gr = Grid rows
 @mixin grid($gc, $gr) {
     display: grid;
