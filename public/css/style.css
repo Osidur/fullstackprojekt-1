@@ -1,0 +1,22 @@
+/* Error: Missing argument $ff.
+ *   ,--> scss\index.scss
+ * 37|     @include text($normaltext, normal);
+ *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> scss\_functions.scss
+ * 5 | @mixin text($fs, $fw, $ff) {
+ *   |        =================== declaration
+ *   '
+ *   scss\index.scss 37:5  text()
+ *   scss\index.scss 37:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $ff.\a   \250c \2500 \2500 > scss\\index.scss\a 37\2502      @include text($normaltext, normal);\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > scss\\_functions.scss\a 5 \2502  @mixin text($fs, $fw, $ff) {\d\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   scss\\index.scss 37:5  text()\a   scss\\index.scss 37:5  root stylesheet";
+}

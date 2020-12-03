@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "index.scss",
+        "_colors.scss",
+        "_layout.scss",
+        "_forms.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
