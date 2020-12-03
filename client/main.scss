@@ -23,6 +23,11 @@ button {
     @include color($color2, $color1);
 }
 
+#fakebutton {
+    @include text($menutext, normal, Arial);
+    @include color($color2, $color1);
+}
+
 .content {
     @include grid(repeat(8, 12.5%), repeat(10, 10%));
     @include color($color2, $color1);
