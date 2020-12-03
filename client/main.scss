@@ -1,0 +1,62 @@
+@import 'functions';
+@import "./_variables.scss";
+
+body {
+    @include pos(none, 0, 1);
+}
+
+#wrapper {
+    @include grid(100%, 10vh 80vh 10vh);
+}
+
+.header {
+    @include grid(repeat(8, auto), 100%);
+}
+
+.header>div {
+    @include pos(center, auto, 1);
+    @include text($menutext, normal, Arial);
+}
+
+button {
+    @include text($menutext, normal, Arial);
+    @include color($color2, $color1);
+}
+
+.content {
+    @include grid(repeat(8, 12.5%), repeat(10, 10%));
+    @include color($color2, $color1);
+}
+
+.content>div {
+    @include text($normaltext, normal);
+}
+
+#text {
+    @include gridpos(3, 3, 3, 1);
+}
+
+#bigtext {
+    @include gridpos(3, 6, 2, 1);
+    @include text($bigtext, bold);
+}
+
+#logo {
+    @include text($bigtext, bold);
+}
+
+#gradient {
+    @include gridpos(7, 1, 1, 10);
+    @include color(none, $color2);
+    @include graduent(90deg, 0, 0, 0, 0, 30%, 160, 0, 0, 1, 100%);
+    @include pos(none, 0, 0);
+}
+
+.footer {
+    @include grid(repeat(4, auto), 100%);
+}
+
+.footer>div {
+    @include pos(center, auto, 1);
+    @include text($menutext, normal, Arial);
+}

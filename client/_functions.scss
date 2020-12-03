@@ -1,0 +1,59 @@
+//General text attributes
+//$fs = Font size
+//$fw = Font weight
+//$ff = Font family
+@mixin text($fs, $fw, $ff) {
+    font-size: $fs;
+    font-weight: $fw;
+    font-family: $ff;
+}
+
+//Grid setup attributes
+//$gc = Grid colums
+//$gr = Grid rows
+@mixin grid($gc, $gr) {
+    display: grid;
+    grid-template-columns: $gc;
+    grid-template-rows: $gr;
+}
+
+//For positioning in grid structures
+//$cs = Column start
+//$ce = Column end
+//$gs = Grid start
+//$ge = Grid end
+@mixin gridpos($cs, $ce, $gs, $ge) {
+    grid-column: $cs / span $ce;
+    grid-row: $gs / span $ge;
+}
+
+//A few general positioning attributes
+//$as = Align-self
+//$m = Margin
+//$z = Z-index
+@mixin pos($as, $m, $z) {
+    align-self: $as;
+    margin: $m;
+    z-index: $z;
+}
+
+//Mixin for a gradient
+//$deg = degrees. Orientation/direction of gradient.
+//a* = first half of gradient
+//b* = Second half of gradient
+//*r = Red
+//*g = Green
+//*b = Blue
+//*o = Opacity
+//*cent = Percentage
+@mixin gradient($deg, $ar, $ag, $ab, $ao, $acent, $br, $bg, $bb, $bo, $bcent) {
+    background: linear-gradient($deg, rgba($ar, $ag, $ab, $ao) $acent, rgba($br, $bg, $bb, $bo) $bcent);
+}
+
+//A few coloring attributes
+//$bc = Background color
+//$c = Color
+@mixin color($bc, $c) {
+    background-color: $bc;
+    color: $c;
+}

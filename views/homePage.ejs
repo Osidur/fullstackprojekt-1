@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>BA Homepage</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <button onclick="home()" id="logo">BA</button>
+            <button onclick="white()" id="white">WHITE</button>
+            <button onclick="red()" id="red">RED</button>
+            <button onclick="yellow()" id="yellow">YELLOW</button>
+            <button onclick="green()" id="green">GREEN</button>
+            <button onclick="blue()" id="blue">BLUE</button>
+            <button onclick="purple()" id="purple">PRUPLE</button>
+            <button onclick="black()" id="black">BLACK</button>
+        </div>
+        <div class="content">
+            <div id="text">
+                <p> Welcome to the only webstite on the internet that will tell you the stunning truth about the world.
+                    Bitch Ass's mission is to enlighten the population (that's you!) about the splendor that is colors.
+                    Despite the government's attempts at silencing us, we stand strong.
+                    Read about any color you want in our amalgamation of beauty. </p>
+            </div>
+            <div id="bigtext">BITCH ASS</div>
+            <div id="gradient"></div>
+        </div>
+        <div class="footer">
+            <button onclick="home()" id="logo">BA</button>
+            <button onclick="contact()" id="contact">CONTACT</button>
+            <button onclick="address()" id="aboutus">ADDRESS</button>
+            <button onclick="urmom()" id="urmom">UR MOM</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    function home() {
+        document.getElementById("bigtext").innerHTML =
+            "BITCH ASS";
+        document.getElementById("text").innerHTML =
+            "Welcome to the only webstite on the internet that will tell you the stunning truth about the world. Bitch Ass's mission is to enlighten the population (that's you!) about the splendor that is colors. Despite the government's attempts at silencing us, we stand strong. Read about any color you want in our amalgamation of beauty. ";
+    }
+
+    function white() {
+        document.getElementById("gradient").style.background =
+            'linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%)';
+        document.getElementById("bigtext").innerHTML =
+            "WHITE";
+        document.getElementById("text").innerHTML =
+            "White ipsum dolor, sit amet consectetur adipisicing elit. Deserunt assumenda enim ducimus tempore ratione quas, quis soluta architecto dicta reiciendis temporibus laboriosam alias aperiam optio sapiente eligendi neque, illum ipsa.";
+    }
+
+    function red() {
+        document.getElementById("gradient").style.background =
+            'linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(160,0,0,1) 100%)';
+        document.getElementById("bigtext").innerHTML =
+            "RED";
+        document.getElementById("text").innerHTML =
+            "Red ipsum dolor, sit amet consectetur adipisicing elit. Deserunt assumenda enim ducimus tempore ratione quas, quis soluta architecto dicta reiciendis temporibus laboriosam alias aperiam optio sapiente eligendi neque, illum ipsa.";
+    }
+
+    function yellow() {
+        document.getElementById("gradient").style.background =
+            'linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(255,255,0,1) 100%)';
+        document.getElementById("bigtext").innerHTML =
+            "YELLOW";
+        document.getElementById("text").innerHTML =
+            "Yellow ipsum dolor, sit amet consectetur adipisicing elit. Deserunt assumenda enim ducimus tempore ratione quas, quis soluta architecto dicta reiciendis temporibus laboriosam alias aperiam optio sapiente eligendi neque, illum ipsa.";
+    }
+
+    function green() {
+        document.getElementById("gradient").style.background =
+            'linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(0,255,0,1) 100%)';
+        document.getElementById("bigtext").innerHTML =
+            "GREEN";
+        document.getElementById("text").innerHTML =
+            "Green ipsum dolor, sit amet consectetur adipisicing elit. Deserunt assumenda enim ducimus tempore ratione quas, quis soluta architecto dicta reiciendis temporibus laboriosam alias aperiam optio sapiente eligendi neque, illum ipsa.";
+    }
+
+    function blue() {
+        document.getElementById("gradient").style.background =
+            'linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(0,0,255,1) 100%)';
+        document.getElementById("bigtext").innerHTML =
+            "BLUE";
+        document.getElementById("text").innerHTML =
+            "Blue ipsum dolor, sit amet consectetur adipisicing elit. Deserunt assumenda enim ducimus tempore ratione quas, quis soluta architecto dicta reiciendis temporibus laboriosam alias aperiam optio sapiente eligendi neque, illum ipsa.";
+    }
+
+    function purple() {
+        document.getElementById("gradient").style.background =
+            'linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(100,50,150,1) 100%)';
+        document.getElementById("bigtext").innerHTML =
+            "PURPLE";
+        document.getElementById("text").innerHTML =
+            "Purple ipsum dolor, sit amet consectetur adipisicing elit. Deserunt assumenda enim ducimus tempore ratione quas, quis soluta architecto dicta reiciendis temporibus laboriosam alias aperiam optio sapiente eligendi neque, illum ipsa.";
+    }
+
+    function black() {
+        document.getElementById("gradient").style.background =
+            'linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 100%)';
+        document.getElementById("bigtext").innerHTML =
+            "BLACK";
+        document.getElementById("text").innerHTML =
+            "Black is not a color.";
+    }
+
+    function contact() {
+        document.getElementById("bigtext").innerHTML =
+            "CONTACT";
+        document.getElementById("text").innerHTML =
+            "Good luck calling us ;)";
+    }
+
+    function address() {
+        document.getElementById("bigtext").innerHTML =
+            "ADDRESS";
+        document.getElementById("text").innerHTML =
+            "Good luck finding us ;)";
+    }
+
+    function urmom() {
+        document.getElementById("bigtext").innerHTML =
+            "UR MOM";
+        document.getElementById("text").innerHTML =
+            "Ur mom ;)";
+    }
+</script>
+
+</html>
